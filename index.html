@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="koledar.css">
+  <title>Koledar</title>
+</head>
+<body>
+  <div class="calendar-container">
+    <div class="header">
+      <button class="nav-button" onclick="previousMonth()">&lt; Nazaj</button>
+      <div class="navigation">
+        <div id="currentDay"></div>
+        <div id="currentMonth"></div>
+      </div>
+      <button class="nav-button" onclick="nextMonth()">Naprej &gt;</button>
+    </div>
+    <div class="calendar-content">
+      <div class="dayNames">
+        <div class="dayName">Ned</div>
+        <div class="dayName">Pon</div>
+        <div class="dayName">Tor</div>
+        <div class="dayName">Sre</div>
+        <div class="dayName">Čet</div>
+        <div class="dayName">Pet</div>
+        <div class="dayName">Sob</div>
+      </div>
+      <div id="calendar"></div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="koledar.js"></script>
+</body>
+</html>
